@@ -17,14 +17,16 @@ body {
   color: white;
 }
 
+
 #indexMain {
   background: black;
 }
 
-#indexHeaders {
+.header {
   height: 15%;
   background: rgb(184,174,238);
   background: linear-gradient(90deg, rgba(184,174,238,1) 0%, rgba(3,3,11,1) 100%);
+  width: 100%;
 }
 
 h1, h2 {
@@ -53,27 +55,87 @@ h1, h2 {
     text-align: center;
   }
 
-  #mainImage
-  {
-    width: 25%;
-    height: 33%;
+  .row {
+    width: 100%;
+    height: 37.5%;
+    display: flex;
   }
 
-  #mainImage img
+  .rowText {
+    width: 65%;
+    height: 100%;
+  }
+  
+  .rowTextHeader {
+    padding: 15px;
+    font-size: 32px;
+  }
+
+  .rowTextSubHeader {
+    padding: 15px;
+    font-size: 24px;
+  }
+
+  #botRowText {
+    text-align: end;
+  }
+
+  .rowImage {
+    width: 35%;
+    height: 100%;
+  }
+
+  .rowImage img 
   {
     width: 100%;
     height: 100%;
   }
-  /*#photoGrid {
+  /*PAGE TWO*/
+
+  #main2
+  {
+    background-color: black;
+  }
+
+  #p2headers h1 {
+    padding-top: 2%;
+  }
+
+  .rowTextBig {
+    width: 50%;
+    height: 100%;
+  }
+
+  .rowTextBig p {
+    padding: 15px;
+    font-size: 24px;
+  }
+
+  .rowImageBig {
+    width: 50%;
+    height: 100%;
+  }
+
+  .rowImageBig img 
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photoGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
-    grid-template-rows: repeat(3, 1fr);
-    width: 15%;
-    height: 50%;
-    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
   }
 
   .gridPhoto {
-    width: 100%;
-    object-fit: contain;
-  } */
+    
+  }
+
+  /*PAGE THREE*/
+
+  #p3headers h1 {
+    padding-top: 2%;
+  }
