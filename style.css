@@ -1,10 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+
 html,
 body,
 div {
   margin: 0px;
   padding: 0px;
   display: block;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "Trirong", serif;
+  letter-spacing: -1px;
   border: 1px solid white;
 }
 
@@ -56,6 +59,7 @@ h1, h2 {
   { 
     width: 30%;
     height: 50%;
+    padding-bottom: 1%;
     font-size: 42px;
     text-align: center;
   }
@@ -72,12 +76,12 @@ h1, h2 {
   }
   
   .rowTextHeader {
-    padding: 15px;
+    margin: 15px;
     font-size: 32px;
   }
 
   .rowTextSubHeader {
-    padding: 15px;
+    margin: 15px;
     font-size: 24px;
   }
 
@@ -114,6 +118,12 @@ h1, h2 {
   .rowTextBig p {
     padding: 15px;
     font-size: 24px;
+    margin: 0;
+  }
+
+  .rowList { 
+    font-size: 20px;
+    list-style-type: circle;
   }
 
   .rowImageBig {
@@ -152,10 +162,11 @@ h1, h2 {
   }
 
   .columnHalf { 
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .rowHalf {
@@ -170,6 +181,13 @@ h1, h2 {
     width: 100%;
   }
 
+  .rowImageSmall img {
+    width: 90%;
+    height: 85%;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+
   .rowTextSmall {
     width: 100%;
     height: 100%;
@@ -178,10 +196,33 @@ h1, h2 {
   #tableBox {
     height: 80%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
   }
   
-  #statsTable {
-    width: 100%
+  .statsTable {
+    width: 100%;
+    height: 80%;
+  }
+
+  .statsTable th {
+    width: 50%;
+    background-color: #1E90FF;
+  }
+
+  .statsTable tr:nth-child(even){ 
+    background-color: #404040;
+  }
+
+  .statsTable tr:hover {
+    background-color: #999999;
+  }
+
+  .tableHeader {
+    height: 20%;
+    width: 100%;
   }
 
   #formRow {
@@ -195,3 +236,28 @@ h1, h2 {
     width: 100%;
   }
 
+  /*PAGE FOUR*/
+
+  .columnImage {
+    width: 50%;
+    margin-left: 25%;
+    height: 40%;
+  }
+
+  .columnImage img {
+    width: 100%;
+    height: 80%;
+    padding-top: 10%;
+  }
+  .columnText{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+  }
+
+  .columnTextHeader {
+    width: 100%;
+    height: 10%;
+    font-size: 24px;
+    padding-bottom: 5%;
+  }
