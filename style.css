@@ -17,6 +17,7 @@ body {
   background-color: grey;
   z-index: 0;
   color: white;
+  background: black;
 }
 
 table,
@@ -121,37 +122,52 @@ h2 {
     background: linear-gradient(90deg, rgba(184, 174, 238, 1) 0%, rgba(3, 3, 11, 1) 100%);
   }
 
+  #footerCopyright {
+    width: 10%;
+    color: black;
+    margin-right: -5%;
+    font-size: 12px;
+  }
+
   .footerSection {
     width: 30%;
     height: 50%;
-    padding-bottom: 5%;
-    font-size: 42px;
+    padding-bottom: 1%;
+    font-size: 20px;
     text-align: center;
   }
 
   .row {
     width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: block;
   }
 
   .rowText {
     width: 100%;
-    height: 50%;
+    height: 80%;
+    margin-bottom: -50%;
   }
 
   .rowTextHeader {
-    font-size: 32px;
+    margin: 15px;
+    font-size: 22px;
   }
 
   .rowTextSubHeader {
-    font-size: 26px;
+    margin: 15px;
+    font-size: 16px;
+  }
+
+  #botRowText {
+    text-align: end;
+    height: 60%;
   }
 
   .rowImage {
-    width: 100%;
+    width: 75%;
     height: 50%;
+    padding-left: 12.5%;
   }
 
   .rowImage img {
@@ -212,8 +228,9 @@ h2 {
     background-color: black;
   }
 
-  #p2headers {
-    height: 5%;
+  #p2headers h1 {
+    padding-top: 3%;
+    font-size: 24px;
   }
 
   .rowTextBig {
@@ -223,32 +240,39 @@ h2 {
 
   .rowTextBig p {
     padding: 15px;
-    font-size: 32px;
+    font-size: 18px;
     margin: 0;
   }
 
+  .rowTextSubHeader {
+    
+  }
+
   .rowList {
-    margin-top: -1.5%;
-    font-size: 24px;
+    margin-top: -2.5%;
+    font-size: 16px;
     list-style-type: circle;
+    padding-bottom: 10%;
   }
 
   .rowImageBig {
     width: 100%;
-    height: 50%;
-  }
-
-  .rowImageBig img {
-    width: 100%;
     height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .photoGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 25%);
     width: 100%;
     height: 100%;
+  }
+
+  .gridPhoto img {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -348,18 +372,21 @@ h2 {
   #form form {
     padding-top: 7.5%;
   }
-
 }
 
 @media only screen and (max-width: 999px) {
+  #p3headers h1 {
+    padding-top: 3%;
+  }
+
   #p3headers {
-    height: 5%;
+    font-size: 12px;
   }
 
   .rowBig {
     width: 100%;
-    height: 75%;
-    display: flex;
+    height: 100%;
+    display: block;
   }
 
   .columnHalf {
@@ -368,18 +395,19 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30%;
   }
 
   .rowHalf {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .rowImageSmall {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
   }
 
   .rowImageSmall img {
@@ -395,7 +423,7 @@ h2 {
   }
 
   .rowTextSmall p {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   #tableBox {
@@ -404,12 +432,12 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .statsTable {
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
 
   .statsTable th {
@@ -434,6 +462,7 @@ h2 {
     height: 20%;
     width: 100%;
     display: flex;
+    padding-bottom: 25%;
   }
 
   #form {
@@ -443,7 +472,7 @@ h2 {
   }
 
   #form form {
-    padding: 12.5%;
+    padding-top: 7.5%;
   }
 }
 
@@ -481,29 +510,35 @@ h2 {
 
 @media only screen and (max-width: 999px) {
   .columnImage {
-    width: 100%;
-    height: 50%;
+    width: 45%;
+    margin-left: 27.5%;
+    height: 40%;
   }
 
   .columnImage img {
     width: 100%;
     height: 80%;
-    padding-top: 25%;
+    padding-top: 10%;
   }
 
   .columnText {
     width: 100%;
-    height: 60%;
+    height: 100%;
     text-align: center;
   }
 
   .columnTextHeader {
     width: 100%;
     height: 10%;
-    font-size: 30px;
+    font-size: 32px;
+    padding-bottom: 2%;
+  }
+
+  .columnText {
+    padding-bottom: 10%;
   }
 
   .columnText p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
