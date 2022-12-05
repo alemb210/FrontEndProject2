@@ -63,6 +63,7 @@ h2 {
     margin-right: -7.5%;
     font-size: 20px;
   }
+
   .footerSection {
     width: 30%;
     height: 50%;
@@ -244,9 +245,7 @@ h2 {
     margin: 0;
   }
 
-  .rowTextSubHeader {
-    
-  }
+  .rowTextSubHeader {}
 
   .rowList {
     margin-top: -2.5%;
