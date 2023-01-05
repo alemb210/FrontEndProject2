@@ -85,12 +85,13 @@ h2 {
 
   .rowTextHeader {
     margin: 15px;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .rowTextSubHeader {
     margin: 15px;
-    font-size: 22px;
+    font-size: 28px;
+    padding-bottom: 10%;
   }
 
   #botRowText {
@@ -185,7 +186,8 @@ h2 {
   }
 
   #p2headers h1 {
-    padding-top: 3%;
+    padding-top: 1.5%;  
+    font-size: 48px;
   }
 
   .rowTextBig {
@@ -195,13 +197,13 @@ h2 {
 
   .rowTextBig p {
     padding: 15px;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
   }
 
   .rowList {
     margin-top: -2.5%;
-    font-size: 20px;
+    font-size: 26px;
     list-style-type: circle;
   }
 
@@ -321,7 +323,7 @@ h2 {
   }
 
   .rowTextSmall p {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   #tableBox {
@@ -503,7 +505,10 @@ h2 {
   }
 
   .columnText p {
-    font-size: 20px;
+    font-size: 24px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%;
   }
 }
 
